@@ -1,0 +1,21 @@
+[project]
+name = "neomax"
+version = "1.0.0a1"
+description = "Fully asynchronous framework for MAX Bot API"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "c0mrade-dev", email = "killmy666@gmail.com" },
+]
+maintainers = [
+    { name = "c0mrade-dev", email = "killmy666gmail.com" },
+]
+dependencies = [
+    "pydantic>=2.11.7",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.7",
+]
