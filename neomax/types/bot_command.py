@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, TYPE_CHECKING, Any
+from typing import TYPE_CHECKING, Any, Optional
 
 from .base import MaxObject
 
@@ -10,12 +10,13 @@ class BotCommand(MaxObject):
     description: Optional[str] = None
 
     if TYPE_CHECKING:
+
         def __init__(
-                __pydantic__self__,
-                *,
-                name: str,
-                description: Optional[str] = None,
-                **__pydantic_kwargs: Any,
+            __pydantic__self__,
+            *,
+            name: str,
+            description: Optional[str] = None,
+            **__pydantic_kwargs: Any,
         ) -> None:
             super().__init__(
                 name=name,

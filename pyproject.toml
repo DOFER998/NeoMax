@@ -19,3 +19,46 @@ dependencies = [
 dev = [
     "ruff>=0.12.7",
 ]
+
+[tool.ruff]
+line-length = 99
+target-version = "py39"
+exclude = [
+    ".git",
+    "venv",
+    ".venv",
+]
+src = ["neomax"]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "B",
+    "I",
+    "UP",
+    "N",
+    "SIM",
+    "C4",
+    "TID",
+    "T10",
+    "Q",
+    "RET",
+]
+ignore = [
+    "F401",
+    "N805",
+    "UP045",
+    "UP006",
+    "UP035",
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-single-line = false
+known-first-party = ["neomax"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
